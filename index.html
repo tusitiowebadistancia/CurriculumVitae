@@ -1,0 +1,340 @@
+<!doctype html>
+<html lang="es-AR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Currículum • Federico</title>
+  <meta name="description" content="Currículum web de Federico: tecnologías, diplomas y proyectos." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <!-- Background ornaments -->
+  <div class="bg-orb orb-1" aria-hidden="true"></div>
+  <div class="bg-orb orb-2" aria-hidden="true"></div>
+
+  <!-- Header -->
+  <header class="header" id="top">
+    <div class="container header__inner">
+      <a class="brand" href="#inicio" aria-label="Ir a Inicio">
+        <span class="brand__dot" aria-hidden="true"></span>
+        <span class="brand__name">Federico</span>
+        <span class="brand__role">• Programación</span>
+      </a>
+
+      <nav class="nav" aria-label="Navegación principal">
+        <button class="nav__toggle" id="navToggle" aria-expanded="false" aria-controls="navMenu">
+          <span class="nav__toggleLine"></span>
+          <span class="nav__toggleLine"></span>
+          <span class="nav__toggleLine"></span>
+          <span class="sr-only">Abrir menú</span>
+        </button>
+
+        <div class="nav__menu" id="navMenu">
+          <a class="nav__link" href="#inicio">Inicio</a>
+          <a class="nav__link" href="#diplomas">Diplomas</a>
+          <a class="nav__link" href="#proyectos">Proyectos</a>
+
+          <!-- LinkedIn -->
+          <a class="btn btn--ghost" href="https://www.linkedin.com/in/TU_USUARIO" target="_blank" rel="noopener">
+            LinkedIn
+            <span class="btn__icon" aria-hidden="true">↗</span>
+          </a>
+        </div>
+      </nav>
+    </div>
+
+    <div class="header__shadow" aria-hidden="true"></div>
+  </header>
+
+  <main>
+    <!-- HERO / INICIO -->
+    <section class="section hero" id="inicio">
+      <div class="container hero__grid">
+        <div class="hero__content">
+          <p class="pill">Disponible para prácticas / junior</p>
+          <h1 class="title">
+            Hola, soy <span class="grad">Federico</span>.
+            <br/>
+            Estudiante de tecnicatura en programación.
+          </h1>
+
+          <p class="subtitle">
+            Me enfoco en construir interfaces modernas, componentes reutilizables y
+            proyectos web con buenas prácticas. Me gusta trabajar con diseño limpio,
+            performance y código mantenible.
+          </p>
+
+          <div class="hero__cta">
+            <a class="btn btn--primary" href="#proyectos">Ver proyectos</a>
+            <a class="btn btn--soft" href="#diplomas">Ver diplomas</a>
+          </div>
+
+          <div class="tech">
+            <h2 class="h2">Tecnologías</h2>
+
+            <div class="tech__grid" role="list">
+              <!-- Tech card -->
+              <div class="tech__card" role="listitem" title="HTML">
+                <div class="tech__icon" aria-hidden="true">
+                  <!-- HTML icon -->
+                  <svg viewBox="0 0 128 128" width="28" height="28">
+                    <path fill="currentColor" d="M19 3l9 101 36 10 36-10 9-101H19zm72 29H49l1 12h40l-3 36-23 6-23-6-2-20h12l1 10 12 3 12-3 1-14H38l-3-39h59l-1 15z"/>
+                  </svg>
+                </div>
+                <div class="tech__meta">
+                  <div class="tech__name">HTML</div>
+                  <div class="tech__desc">Semántica & SEO</div>
+                </div>
+              </div>
+
+              <div class="tech__card" role="listitem" title="CSS">
+                <div class="tech__icon" aria-hidden="true">
+                  <!-- CSS icon -->
+                  <svg viewBox="0 0 128 128" width="28" height="28">
+                    <path fill="currentColor" d="M19 3l9 101 36 10 36-10 9-101H19zm71 29H49l1 12h40l-3 36-23 6-23-6-1-12h12l1 5 12 3 12-3 1-14H38l-3-39h59l-1 15z"/>
+                  </svg>
+                </div>
+                <div class="tech__meta">
+                  <div class="tech__name">CSS</div>
+                  <div class="tech__desc">Layout & UI</div>
+                </div>
+              </div>
+
+              <div class="tech__card" role="listitem" title="SCSS">
+                <div class="tech__icon" aria-hidden="true">
+                  <!-- SCSS (simple "S") -->
+                  <svg viewBox="0 0 64 64" width="28" height="28">
+                    <path fill="currentColor" d="M34 10c-8 0-14 5-14 11 0 5 4 8 9 10 4 2 6 3 6 5 0 2-2 3-5 3-4 0-7-2-9-4l-4 5c3 3 8 6 14 6 8 0 14-4 14-11 0-6-5-9-10-11-4-2-6-3-6-5s2-3 5-3c3 0 6 1 8 3l4-5c-3-3-7-4-12-4z"/>
+                  </svg>
+                </div>
+                <div class="tech__meta">
+                  <div class="tech__name">SCSS</div>
+                  <div class="tech__desc">Estilos escalables</div>
+                </div>
+              </div>
+
+              <div class="tech__card" role="listitem" title="JavaScript">
+                <div class="tech__icon" aria-hidden="true">
+                  <!-- JS icon -->
+                  <svg viewBox="0 0 128 128" width="28" height="28">
+                    <path fill="currentColor" d="M4 4h120v120H4V4zm65 93c0 9 5 15 15 15 9 0 15-5 15-16V61H86v35c0 5-2 7-6 7-4 0-6-2-7-6l-12 7zm-36 0c3 10 12 15 23 15 13 0 22-7 22-18 0-12-9-16-18-19-6-2-9-3-9-6 0-2 2-4 6-4 4 0 7 2 9 6l12-7c-4-9-12-14-21-14-12 0-20 7-20 17 0 11 9 16 18 19 6 2 9 3 9 6 0 3-3 5-8 5-6 0-10-3-12-8l-11 6z"/>
+                  </svg>
+                </div>
+                <div class="tech__meta">
+                  <div class="tech__name">JavaScript</div>
+                  <div class="tech__desc">Lógica & DOM</div>
+                </div>
+              </div>
+
+              <div class="tech__card" role="listitem" title="React">
+                <div class="tech__icon" aria-hidden="true">
+                  <!-- React icon -->
+                  <svg viewBox="0 0 128 128" width="28" height="28">
+                    <circle cx="64" cy="64" r="10" fill="currentColor"/>
+                    <path fill="none" stroke="currentColor" stroke-width="6" d="M64 18c18 0 34 4 44 10 9 5 13 11 13 16s-5 11-13 16c-10 6-26 10-44 10s-34-4-44-10C11 55 7 49 7 44s5-11 13-16c10-6 26-10 44-10z"/>
+                    <path fill="none" stroke="currentColor" stroke-width="6" d="M37 30c9-16 21-28 32-33 10-5 17-4 22-1s7 10 6 20c-1 12-8 27-17 43S61 88 50 93c-10 5-17 4-22 1s-7-10-6-20c1-12 8-27 17-43z"/>
+                    <path fill="none" stroke="currentColor" stroke-width="6" d="M37 98c-9-16-13-32-12-43 1-10 5-16 10-19s12-2 21 3c10 6 21 19 31 35s16 32 15 44c-1 10-5 16-10 19s-12 2-21-3c-10-6-21-19-31-35z"/>
+                  </svg>
+                </div>
+                <div class="tech__meta">
+                  <div class="tech__name">React JS</div>
+                  <div class="tech__desc">Componentes</div>
+                </div>
+              </div>
+
+              <div class="tech__card" role="listitem" title="UI/UX">
+                <div class="tech__icon" aria-hidden="true">
+                  <!-- Spark icon -->
+                  <svg viewBox="0 0 64 64" width="28" height="28">
+                    <path fill="currentColor" d="M32 4l6 18 18 6-18 6-6 18-6-18-18-6 18-6 6-18z"/>
+                  </svg>
+                </div>
+                <div class="tech__meta">
+                  <div class="tech__name">UI</div>
+                  <div class="tech__desc">Diseño limpio</div>
+                </div>
+              </div>
+            </div>
+
+            <p class="muted">
+              Tip: reemplazá <code>TU_USUARIO</code> por tu usuario real de LinkedIn.
+            </p>
+          </div>
+        </div>
+
+        <aside class="hero__card" aria-label="Tarjeta de perfil">
+          <div class="profile">
+            <div class="profile__avatar" aria-hidden="true">F</div>
+            <div class="profile__info">
+              <div class="profile__name">Federico</div>
+              <div class="profile__tag">Frontend • Estudiante UTN</div>
+            </div>
+
+            <div class="profile__stats">
+              <div class="stat">
+                <div class="stat__n" id="yearsExp">1+</div>
+                <div class="stat__t">Años practicando</div>
+              </div>
+              <div class="stat">
+                <div class="stat__n" id="projectsDone">10+</div>
+                <div class="stat__t">Proyectos personales</div>
+              </div>
+              <div class="stat">
+                <div class="stat__n">AR</div>
+                <div class="stat__t">Argentina</div>
+              </div>
+            </div>
+
+            <div class="profile__actions">
+              <a class="btn btn--primary btn--block" href="https://www.linkedin.com/in/TU_USUARIO" target="_blank" rel="noopener">
+                Conectar en LinkedIn
+                <span class="btn__icon" aria-hidden="true">↗</span>
+              </a>
+              <a class="btn btn--ghost btn--block" href="#diplomas">
+                Ver diplomas
+              </a>
+            </div>
+
+            <div class="profile__note">
+              <span class="dot"></span>
+              <span>Construyendo proyectos con foco en calidad.</span>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <!-- DIPLOMAS -->
+    <section class="section" id="diplomas">
+      <div class="container">
+        <div class="section__head">
+          <h2 class="h2">Diplomas</h2>
+          <p class="p">Certificados de Coderhouse (reemplazá imágenes y textos por los tuyos).</p>
+        </div>
+
+        <div class="grid3">
+          <article class="card cert">
+            <div class="card__media">
+              <img src="assets/cert-1.jpg" alt="Certificado Coderhouse 1" loading="lazy">
+            </div>
+            <div class="card__body">
+              <h3 class="h3">Desarrollo Web</h3>
+              <p class="muted">HTML, CSS, responsive, buenas prácticas y estructura.</p>
+              <div class="chiprow">
+                <span class="chip">Coderhouse</span>
+                <span class="chip">2025</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="card cert">
+            <div class="card__media">
+              <img src="assets/cert-2.jpg" alt="Certificado Coderhouse 2" loading="lazy">
+            </div>
+            <div class="card__body">
+              <h3 class="h3">JavaScript</h3>
+              <p class="muted">DOM, eventos, APIs, asincronía y lógica.</p>
+              <div class="chiprow">
+                <span class="chip">Coderhouse</span>
+                <span class="chip">2025</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="card cert">
+            <div class="card__media">
+              <img src="assets/cert-3.jpg" alt="Certificado Coderhouse 3" loading="lazy">
+            </div>
+            <div class="card__body">
+              <h3 class="h3">React JS</h3>
+              <p class="muted">Componentes, hooks, estado y arquitectura.</p>
+              <div class="chiprow">
+                <span class="chip">Coderhouse</span>
+                <span class="chip">2025</span>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <div class="note">
+          <strong>Cómo usar:</strong> poné tus imágenes reales en <code>/assets</code> con esos nombres,
+          o cambiá los <code>src</code>.
+        </div>
+      </div>
+    </section>
+
+    <!-- PROYECTOS -->
+    <section class="section" id="proyectos">
+      <div class="container">
+        <div class="section__head">
+          <h2 class="h2">Proyectos</h2>
+          <p class="p">Una muestra rápida. Podés duplicar la tarjeta para agregar más.</p>
+        </div>
+
+        <article class="card project">
+          <div class="card__media">
+            <img src="assets/proyecto-1.jpg" alt="Imagen del proyecto" loading="lazy">
+          </div>
+
+          <div class="card__body">
+            <div class="project__top">
+              <h3 class="h3">Nombre del Proyecto</h3>
+              <div class="chiprow">
+                <span class="chip">React</span>
+                <span class="chip">UI</span>
+                <span class="chip">Responsive</span>
+              </div>
+            </div>
+
+            <p class="muted">
+              Breve descripción del proyecto: qué resuelve, qué tecnologías usa y cuál fue tu aporte.
+              Enfocalo en valor (usuario/cliente) y resultados.
+            </p>
+
+            <div class="project__actions">
+              <a class="btn btn--primary" href="https://TU-LINK-DEL-PROYECTO.com" target="_blank" rel="noopener">
+                Ver proyecto
+                <span class="btn__icon" aria-hidden="true">↗</span>
+              </a>
+              <a class="btn btn--ghost" href="https://github.com/TU-USUARIO" target="_blank" rel="noopener">
+                GitHub
+                <span class="btn__icon" aria-hidden="true">↗</span>
+              </a>
+            </div>
+
+            <div class="divider"></div>
+
+            <p class="small muted">
+              Tip: si tu proyecto es un repo, poné el link directo. Si es una demo, mejor.
+            </p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container footer__inner">
+        <span>© <span id="year"></span> Federico</span>
+        <a class="footer__link" href="https://www.linkedin.com/in/TU_USUARIO" target="_blank" rel="noopener">
+          LinkedIn ↗
+        </a>
+      </div>
+    </footer>
+
+    <!-- Floating LinkedIn button -->
+    <a class="float" href="https://www.linkedin.com/in/TU_USUARIO" target="_blank" rel="noopener" aria-label="Abrir mi LinkedIn">
+      in
+    </a>
+
+    <!-- Scroll-to-top -->
+    <button class="toTop" id="toTop" aria-label="Volver arriba">↑</button>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
