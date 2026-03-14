@@ -92,6 +92,6 @@ function animateNumber(el, targetNumber, suffix = "+") {
 
 window.addEventListener("load", () => {
   // Cambiá los números por los reales si querés
-  animateNumber(yearsExp, 1, "+");
-  animateNumber(projectsDone, 10, "+");
+  animateNumber(yearsExp, 2, "+");
+  animateNumber(projectsDone, 1, "+");
 });
